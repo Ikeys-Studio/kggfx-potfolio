@@ -1,0 +1,107 @@
+:root {
+  --primary-purple: #9b59b6; /* A strong purple for accents */
+  --purple-hover: #8e44ad;   /* A darker purple for hover effects */
+  --background-dark: #1e1e2f; /* Main dark background */
+  --surface-dark: #2c2c3f;  /* Slightly lighter for cards/headers */
+  --text-primary: #f0f0f0;  /* Main light text color */
+  --text-secondary: #a0a0b0;/* Faded text for descriptions */
+}
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Center the container using Flexbox */
+body {
+  height: 100vh;
+  background: var(--background-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Login box styling */
+.login-box {
+  background: var(--surface-dark);
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Heading */
+.login-box h2 {
+  margin-bottom: 24px;
+  text-align: center;
+  color: var(--text-primary);
+}
+
+/* Input field styling */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 14px 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+  color: var(--text-primary);
+  background: var(--surface-dark);
+  transition: border-color 0.3s ease;
+}
+
+.login-box a {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  color: var(--text-secondary);
+  text-decoration: none;
+}
+
+/* Input group styling */
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 14px 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+
+.input-group label {
+  position: absolute;
+  top: -10px;
+  left: 12px;
+  background: #fff;
+  padding: 0 5px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Button styling */
+button {
+  width: 100%;
+  padding: 14px;
+  background: #9b59b6;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #0056b3;
+}
